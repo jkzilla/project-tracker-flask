@@ -22,5 +22,11 @@ def get_student_form():
 
     return render_template("student_search.html")
 
+@app.route("/student-add", methods=['POST'])
+def student_add():
+    """Add a student."""
+
+    return render_template("new_student.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
